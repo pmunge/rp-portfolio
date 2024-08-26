@@ -4,12 +4,5 @@
     background-repeat: no-repeat; /* Adjust as needed (repeat, no-repeat) */
     background-position: center; /* Adjust as needed (center, top left, etc.) */
 }
-body{
-    background-color: violet;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+
   
