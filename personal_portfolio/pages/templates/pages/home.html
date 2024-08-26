@@ -1,9 +1,7 @@
-<!-- pages/templates/pages/home.html -->
-
 {% extends "base.html" %}
 
 {% block page_content %}
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-3">
             <nav class="navbar navbar-dark bg-dark">
@@ -12,7 +10,7 @@
                         <a class="nav-link" href="default.asp">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="news.asp">projects</a>
+                        <a class="nav-link" href="news.asp">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.asp">Contact</a>
@@ -24,9 +22,11 @@
 
             </nav>
         </div>
-   <div class="col-md-9">
-    <h1>Hi!</h1><br>
-    <h1> I'm Prudence Munge</h1><br>
-    <h2>A software developer </h2>
-   </div> 
+        <div class="col-md-9">
+            <h1>Hi!</h1><br>
+            <h1> I'm Prudence Munge</h1><br>
+            <h2>A software developer </h2>
+        </div>
+    </div>
+</div>
 {% endblock page_content %}
