@@ -2,12 +2,43 @@
 
 {% extends "base.html" %}
 
-{% block page_content %}
+{% block content %}
+<nav class="navbar fixed-top" style = "background-color: #BCCCDC;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Prudence</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">My portfolio</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.asp">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div>
 <h1>Projects</h1>
 <div class="row">
 {% for project in projects %}
-    <div class="col-md-4">
-        <div class="card mb-2">
+    <div class="col-md-4" >
+        <div class="card mb-2" style="background-color: #C5D3E8;">
             {% if project.image %}
                 <img class="card-img-top" src="{{ project.image.url }}" width="100px" height="150px">
             {% endif %}
@@ -22,5 +53,6 @@
         </div>
     </div>
     {% endfor %}
+</div>
 </div>
 {% endblock %}

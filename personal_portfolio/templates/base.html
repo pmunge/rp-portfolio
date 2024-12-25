@@ -15,6 +15,7 @@
     <style>
         html, body {
             height: 100%;
+            background-color: #D9EAFD;
         }
         .content {
             flex: 1; 
@@ -23,13 +24,16 @@
     color: #FFF;  /* Set the color to white or any other contrasting color */
     font-size: 14px;  /* Adjust font size if needed */
         }
+        .footer-bg {
+        background-color: #9AA6B2;
+        }
     </style>
 </head>
 <body class="d-flex flex-column bg-image">
     <div class="content">
-        {% block page_content %}{% endblock page_content %}
+        {% block content %}{% endblock content %}
     </div>
-    <footer class="bg-dark text-light mt-auto pt-4 pb-4">
+    <footer class="footer-bg text-light mt-auto pt-4 pb-4">
         <div class="container">
             <div class="row">
                 <!-- Left Side (Text) -->
